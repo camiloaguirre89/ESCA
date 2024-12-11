@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIO</title>
+    <link rel=  "stylesheet" href="/css/principal.css">
+</head>
+<body>
+    
+    <div id="container">
+
+        <header> <!-- CABECERA DE LA PAGINA -->
+            <div class="containerHeader">
+                <img src="/imagenes/ESCA-fotor-2024120619455.png" alt="Libreta" id="Libreta">
+                <h1>SISTEMA GENERAL DE INVENTARIOS <br> ESCA ® </h1>
+            </div>
+            
+            
+        </header>
+
+        <nav> <!-- MENU DE LA PAGINA -->
+            <ul>
+                <li>
+                    <a href="PRINCIPAL.html">
+                        <button id="inicio" class="BotonMenu">INICIO</button>
+                    </a>
+                    
+                </li>
+
+                <li>
+                    <a href="PRODUCTOS.html">
+                        <button id="productos" class="BotonMenu">PRODUCTOS</button>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="PROVEEDORES.html">
+                    <button id="proveedores" class="BotonMenu">PROVEEDORES</button>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="CLIENTES.html">
+                    <button id="clientes" class="BotonMenu">CLIENTES</button>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="principal.html">
+                    <button id="facturas" class="BotonMenu">FACTURAS</button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="clearfix"></div>
+
+
+        <section id="content"> <!-- CONTENIDO DE LA PAGINA -->
+
+            <div class="containerArriba">
+                <div class="containerForm">
+
+                    <article class="article">
+                        <h2>Hora actual:</h2>
+                    </article>
+
+                    <article class="article">
+                        <div id="reloj" style="font-size: 2em; text-align: center; margin-top: 5%; margin-bottom: 5%;"></div>
+                        <script src="/js/reloj.js"></script>
+                    </article>
+
+                    <article>
+                        <div class="clock">
+                            <div class="hour" id="hour"></div>
+                            <div class="minute" id="minute"></div>
+                            <div class="second" id="second"></div>
+                        </div>
+                        <script src="/js/analogo.js"></script>
+                    </article>
+                    
+                </div>
+                <div class="containerForm">
+
+                    <article class="article">
+                        <h2>Fecha actual:</h2>
+                    </article>
+
+                    <article class="article">
+                        <div class="calendar">
+                            <div class="header">
+                                <button id="prevMonth">◀</button>
+                                <h2 id="monthYear"></h2>
+                                <button id="nextMonth">▶</button>
+                            </div>
+                            <table id="calendarTable">
+                                <thead>
+                                    <tr>
+                                        <th>Dom</th>
+                                        <th>Lun</th>
+                                        <th>Mar</th>
+                                        <th>Mié</th>
+                                        <th>Jue</th>
+                                        <th>Vie</th>
+                                        <th>Sáb</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="calendarBody">
+                                    <!-- Las filas de los días se generarán dinámicamente -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <script src="/js/calendar.js"></script>
+                    </article>
+
+                </div>
+
+            </div>
+
+            <div class="containerAbajo">
+
+                <div class="containerForm">
+
+                    <article class="article">
+                        <h2>Misión</h2><br>
+                        <p>Facilitar la gestión integral de inventarios a través de una plataforma intuitiva, eficiente y segura que permita a las empresas optimizar el control de sus recursos, mejorar la toma de decisiones y maximizar su productividad. Nuestro compromiso es ofrecer soluciones tecnológicas innovadoras que se adapten a las necesidades de nuestros usuarios, fomentando la transparencia, la precisión y el crecimiento sostenible en sus operaciones.</p>
+                    </article>
+
+                    <article class="article">
+                        <h2>Visión</h2><br>
+                        <p>Ser la plataforma líder en gestión de inventarios, reconocida por su innovación, confiabilidad y capacidad de transformar procesos empresariales. Aspiramos a convertirnos en un referente global, empoderando a las organizaciones con herramientas tecnológicas que simplifiquen la administración de recursos, promuevan la sostenibilidad y potencien su crecimiento en un entorno dinámico y competitivo.</p>
+                    </article>
+
+                </div>
+                <div class="containerForm">
+
+                    <article class="article">
+                        <h2>Instrucciones de uso:</h2>
+                    </article>
+                    
+                    <article class="article">
+                        <p>Escribir como usarse</p>
+                    </article>
+
+                    <article class="article">
+                        <img src="/imagenes/ESCA-fotor-2024120619455.png" alt="Libreta" id="Libreta" class="ESCA">
+                    </article>
+                </div>
+            
+            </div>
+
+        </section>
+
+        <aside> <!-- BARRA LATERAL DE LA PAGINA -->
+            <center>
+            <h2>Opciones de gestión</h2><br>
+            
+                <input type="text"><br><br>
+                <button id="buscar" class="buscarButton">Buscar</button><br><br>
+                <a href="agregarPRODUCTO.html"><button id="buscarButton" class="buscarButton">Agregar <br> producto</button></a><br><br>
+                <a href="agregarPROVEEDOR.html"><button id="buscar" class="buscarButton">Agregar <br> proveedor</button></a><br><br>
+                <a href="agregarCLIENTE.html"><button id="buscar" class="buscarButton">Agregar <br> cliente</button></a><br><br>
+                <button id="buscar" class="buscarButton">Crear nueva factura</button><br><br>
+            
+            </center>
+        </aside>
+
+        <div class="clearfix"></div>
+
+        <footer> <!-- PIE DE PAGINA -->
+            <div class="containerFooter">
+                <h1>Gracias por confiar en ESCA ® inventarios <br> ¡Vuelve pronto!</h1>
+                <img src="/imagenes/tableta-fotor-20241130105450.png" alt="Libreta" id="Libreta">
+            </div>
+        </footer>
+    
+    </div>
+    
+</body>
+
+</html>

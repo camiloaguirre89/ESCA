@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLIENTES</title>
+    <link rel="stylesheet" href="/css/PRODUCTOS.css">
+     <!-- Bootstrap-->
+    <link 
+        rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+        crossorigin="anonymous">
+    <!--DataTable-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.min.css">
+    <!--font awesome-->
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
+    <!--custom css-->
+    <link rel="stylesheet" href="/css/base.css">
+    <!-- Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--DataTable-->
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.min.js"></script>
+    
+    <!--Custom JS liga la js de usuarios falsos-->
+    <script src="/js/Base.js"></script>
+
+</head>
+
+<body>
+    
+    <div id="container">
+
+        <header> <!-- CABECERA DE LA PAGINA -->
+            <div class="containerHeader">
+                <img src="/imagenes/ESCA-fotor-2024120619455.png" alt="Libreta" id="Libreta">
+                <h1> ESCA ® <br> LISTADO DE CLIENTES</h1>
+            </div>
+        
+        </header>
+
+        <nav> <!-- MENU DE LA PAGINA -->
+            <ul>
+                <li>
+                    <a href="PRINCIPAL.html">
+                        <button id="inicio" class="BotonMenu">INICIO</button>
+                    </a>
+                    
+                </li>
+
+                <li>
+                    <a href="PRODUCTOS.html">
+                        <button id="productos" class="BotonMenu">PRODUCTOS</button>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="PROVEEDORES.html">
+                    <button id="proveedores" class="BotonMenu">PROVEEDORES</button>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="CLIENTES.html">
+                    <button id="clientes" class="BotonMenu">CLIENTES</button>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="principal.html">
+                    <button id="facturas" class="BotonMenu">FACTURAS</button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="clearfix"></div>
+
+
+        <section id="content"> <!-- AQUI CAMBIA PARA SEGUN TIPO DE PERSONA-->
+
+                <div class="containerPRODUCTOS my-4">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <table id="datatable_users" class="table table-striped"> <!--table-striped para que una fila e quede subrayada y la otra no-->
+                                <caption>  <!--subtititulo o descripcion de la tabla-->
+                                    <BR>Listado de clientes disponibles
+                                </caption>
+                                <thead>
+                                    <tr>
+                                        <th class="centered">ID</th>
+                                        <th class="centered">DOC CLIENTE</th>
+                                        <th class="centered">NOMBRES</th>
+                                        <th class="centered">APELLIDOS</th>
+                                        <th class="centered">TELEFONO</th>
+                                        <th class="centered">CORREO ELECT</th>
+                                        
+                                    </tr>
+                                </thead>
+                                 <tbody  id="tableBody_users"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <aside> <!-- BARRA LATERAL DE LA PAGINA -->
+            <h2>Opciones de gestión</h2><br>
+
+                <a href="agregarPRODUCTO.html"><button id="buscarButton" class="buscarButton">Agregar <br> producto</button></a><br><br>
+                <a href="agregarPROVEEDOR.html"><button id="buscar" class="buscarButton">Agregar <br> proveedor</button></a><br><br>
+                <a href="agregarCLIENTE.html"><button id="buscar" class="buscarButton">Agregar <br> cliente</button></a><br><br>
+                <button id="buscar" class="buscarButton">Crear nueva factura</button><br><br>
+                
+        </aside>
+
+        <div class="clearfix"></div>
+
+        <footer> <!-- PIE DE PAGINA -->
+            <div class="containerFooter">
+                <h1>Gracias por confiar en ESCA ® inventarios <br>¡Vuelve pronto!</h1>
+                <img src="/imagenes/tableta-fotor-20241130105450.png" alt="Libreta" id="Libreta">
+            </div>
+        </footer>
+    
+    </div>
+    <script src="/js/cliente.js"></script>
+    
+    
+</body>
+    
+</html>

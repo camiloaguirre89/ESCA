@@ -1,0 +1,368 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+/* FONDO COMPLETO */
+body{
+    background-color: #f3f3f3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+/* CONTENIDO COMPLETO DE LA PAGINA*/
+#container{
+    width: 1200px;
+    margin: 0px auto;
+}
+
+/* CABECERA */
+header{
+    background-color: #123858;
+    height: 100px;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    color: white;    
+}
+
+/* MENU*/
+nav{
+    background-color: #f3f3f3;
+    height: 110px;
+    margin-left: 30px;
+}
+
+/*MENU */
+nav ul li{
+    float: left;
+    list-style: none;
+    margin: 25px;
+    line-height: 30px;
+}
+
+.clearfix{
+    clear: both;
+}
+
+/* ESPACIO PARA ARTICULOS */
+#content{
+    float: left;
+    width: calc(80% - 80px);
+    min-height: 200px;
+    background-color: #f3f3f3;
+    padding: 40px;
+}
+
+.article{
+    color: rgb(69, 68, 68);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(159, 159, 159);
+}
+
+.article:first-child{
+    border-top: 1px solid rgb(159, 159, 159);
+    padding: 10px;
+}
+
+.article h2{
+    font-size: 25px;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px !important;
+    text-align: center;
+    font: bold !important;
+}
+
+/* BARRA LATERAL color anterior para cambiar #22809d */
+aside{
+    float: left;
+    width: calc(20% - 20px);
+    min-height: 510px;
+    background-color: #13abae;
+    padding: 10px;
+    padding-top: 20px;
+    color: white;
+    border: hidden;
+    border-radius: 20px;
+}
+
+/* PIE DE PAGINA */
+footer{
+    background-color: #123858;
+    color: white;
+    text-align: center;
+    height: 100px;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: cursive;
+   
+}
+
+/* BOTONES DEL MENU */
+.BotonMenu{
+    background-color: #123858;
+    border: hidden;
+    border-radius: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* BOTONES de la tabla del siguiente*/
+button{
+    background-color: #123858;
+    border: hidden;
+    border-radius: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+}
+
+/* BOTONES DEL MENU */
+.BotonMenu:hover{
+    background-color: #6b9ebf;
+}
+
+/* BOTON BARRA LATERAL */
+.buscarButton{
+    background-color: #f3f3f3;
+    border: hidden;
+    border-radius: 10px;
+    color: #123858;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 120px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* BOTON BARRA LATERAL */
+.buscarButton:hover{
+    background-color: #a19e9e;
+}
+
+li{
+    padding: 5px;
+    vertical-align: center;
+}
+
+/* formato al contenido en 4 cuadros */
+.containerArriba,.containerAbajo{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+/* esto para darle formato al interior de los cuadrtios */
+.containerForm{
+    width: 45%;
+    padding: 5px;
+    border-style: solid;
+    border-color: #13abae;
+    box-shadow: 3px 3px 3px #13abae;
+    margin-bottom: 20px;
+}
+
+input{
+    width: 170px;
+    height: 30px;
+}
+
+/* PALETA DE COLORES */
+.color1 {color: #123858;}
+.color2 {color: #18576b;}
+.color3 {color: #6c969b;}
+.color4 {color: #cad9d9;}
+.color5 {color: #f3f3f3;}
+
+/* link de la paleta de colores:
+https://mybrandnewlogo.com/es/generador-de-paleta-de-colores
+ */
+
+ .containerHeader{
+    display: flex;
+    align-items: center;
+ }
+
+ .containerHeader img{
+    margin-left: 10px;
+    width: 80px;
+    height: auto;
+ }
+
+ .containerHeader h1{
+    margin-left: 310px;
+ }
+
+ .containerFooter{
+    display: flex;
+    align-items: center;
+ }
+
+ .containerFooter img{
+    margin-top: 5px;
+    margin-left: 290px;
+    width: 80px;
+    height: auto;
+ }
+
+ .containerFooter h1{
+    /*margin-right: 250px;*/
+    margin-left: 350px;
+ }
+
+ /* FORMATO DE FORMULA PARA AGREGAR PRODUCTOS - CLIENTES - PROVEEDORES. 
+ */
+
+ .divizquierda, .divderecha, .divcenter{
+    width: 25%;
+    padding: 2%;
+    border-style: solid;
+    border-color: #123858;
+    box-shadow: 4px 4px 10px #123858;
+}
+
+.contenedor3{
+    display: flex;
+    justify-content: space-between; /* Permite que todos queden en el mismo nivel*/
+    margin: 10px;
+}
+
+.DivBotton{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.calendar {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-left: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.header button {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: center;
+    padding: 10px;
+}
+
+td {
+    border: 1px solid #ddd;
+}
+
+td:hover {
+    background: #f0f8ff;
+    cursor: pointer;
+}
+
+.today {
+    background-color: #ffeb3b;
+    font-weight: bold;
+}
+
+
+
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+    border-radius: 50%;
+    background: white;
+    margin-left: 90px;
+    margin-top: 40px;
+}
+
+.clock::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hour, .minute, .second {
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background: black;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: transform 0.05s cubic-bezier(0.4, 2.3, 0.3, 1);
+}
+
+.minute {
+    height: 1.5px;
+    background: gray;
+}
+
+.second {
+    height: 1px;
+    background: red;
+}
+
+p{
+    text-align: justify;
+}
+
+.ESCA{
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    margin-left: 120px;
+
+}

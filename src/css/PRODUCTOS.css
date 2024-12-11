@@ -1,0 +1,250 @@
+/* ESTA BASE DE CSS ESTA GENERAL PARA DAR FORMATO A PRODUCTOS-CLIENTES-PROVEEDORES */
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+/* FONDO COMPLETO */
+body{
+    background-color: #f3f3f3 !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 14px;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px !important;
+    font-weight: bold !important; 
+    margin-left: 350px !important;
+    margin-top: 10px !important;
+}
+
+/* CONTENIDO COMPLETO DE LA PAGINA*/
+#container{
+    width: 1200px;
+    margin: 0px auto;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 25px !important;
+    text-align: center;
+    font: bold !important;
+}
+
+
+/* CABECERA */
+header{
+    background-color: #123858;
+    height: 100px;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    line-height: 100px !important;
+    color: white;
+    color: white;    
+}
+
+/* MENU*/
+nav{
+    background-color: #f3f3f3;
+    height: 110px;
+    margin-top: -15px;
+}
+
+/*MENU */
+nav ul li{
+    float: left;
+    list-style: none;
+    margin: 25px;
+    line-height: 30px;
+}
+
+.clearfix{
+    clear: both;
+}
+
+/* ESPACIO PARA ARTICULOS */
+#content{
+    float: left;
+    width: calc(85% - 80px);
+    min-height: 200px;
+    background-color: #f3f3f3;
+    padding: 10px;
+}
+
+/* BARRA LATERAL color anterior para cambiar #22809d */
+aside{
+    float: left;
+    width: calc(20%);
+    min-height: 700px;
+    background-color: #13abae;
+    padding: 10px;
+    padding-top: 20px;
+    color: white;
+    border: hidden;
+    border-radius: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+/* PIE DE PAGINA */
+footer{
+    background-color: #123858;
+    color: white;
+    text-align: center;
+    height: 100px;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: cursive;
+   
+}
+
+/* BOTONES DEL MENU */
+.BotonMenu{
+    background-color: #123858;
+    border: hidden;
+    border-radius: 10px;
+    color: white !important;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* BOTONES de la tabla del siguiente*/
+button{
+    background-color: #123858;
+    border: hidden !important;
+    border-radius: 10px !important;
+    color: #123858 !important;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+}
+
+/* BOTONES DEL MENU */
+.BotonMenu:hover{
+    background-color: #6b9ebf;
+}
+
+/* BOTON BARRA LATERAL */
+.buscarButton{
+    background-color: #f3f3f3 !important;
+    border: hidden;
+    border-radius: 10px;
+    color: #123858;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 120px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* BOTON BARRA LATERAL */
+.buscarButton:hover{
+    background-color: #a19e9e;
+}
+
+li{
+    padding: 5px;
+    vertical-align: center;
+}
+
+/* formato al contenido en 4 cuadros */
+.containerArriba,.containerAbajo{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+/* esto para darle formato al interior de los cuadrtios */
+.containerForm{
+    width: 45%;
+    padding: 5px;
+    border-style: solid;
+    border-color: #13abae;
+    box-shadow: 3px 3px 3px #13abae;
+    margin-bottom: 20px;
+}
+
+input{
+    width: 170px;
+    height: 30px;
+}
+
+/* PALETA DE COLORES */
+.color1 {color: #123858;}
+.color2 {color: #18576b;}
+.color3 {color: #6c969b;}
+.color4 {color: #cad9d9;}
+.color5 {color: #f3f3f3;}
+
+/* link de la paleta de colores:
+https://mybrandnewlogo.com/es/generador-de-paleta-de-colores
+otra pagina
+https://uigradients.com/#Winter
+ */
+
+ .containerHeader{
+    display: flex;
+    align-items: center;
+ }
+
+ .containerHeader img{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 80px;
+    height: auto;
+ }
+
+ .containerHeader h1{
+    margin-left: 310px;
+ }
+
+ .containerFooter{
+    display: flex;
+    align-items: center;
+ }
+
+ .containerFooter img{
+    margin-left: 10px;
+    width: 80px;
+    height: auto;
+ }
+
+ .containerFooter h1{
+    margin-right: 250px;
+    margin-left: 230px;
+ }
+
+  /* FORMATO DE FORMULA PARA AGREGAR PRODUCTOS - CLIENTES - PROVEEDORES. 
+ */
+
+ .divizquierda, .divderecha, .divcenter{
+    width: 250px;
+    padding: 2%;
+    border-style: solid;
+    border-color: #123858;
+    box-shadow: 4px 4px 5px #123858;
+}
+
+.contenedor3{
+    display: flex;
+    justify-content: space-between; /* Permite que todos queden en el mismo nivel*/
+    margin: 10px;
+}
+
+.DivBotton{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.Prueba{
+    position: relative;
+    left: 80px;
+}

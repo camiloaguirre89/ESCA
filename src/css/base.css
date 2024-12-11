@@ -1,0 +1,11 @@
+body{
+    padding-left: 100px;
+    padding-right: 100px;
+    background: #f3f3f3;
+}
+
+.centered{
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+

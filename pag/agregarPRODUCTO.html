@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar producto</title>
+    <link rel="stylesheet" href="/css/PRODUCTOS.css">
+     <!-- Bootstrap-->
+    <link 
+        rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+        crossorigin="anonymous">
+</head>
+
+<body>
+    
+    <div id="container">
+
+        <header> <!-- CABECERA DE LA PAGINA -->
+            <div class="containerHeader">
+                <img src="/imagenes/ESCA-fotor-2024120619455.png" alt="Libreta" id="Libreta">
+                <h1> ESCA ® <br> LISTADO DE PRODUCTOS  </h1>
+            </div>
+        
+        </header>
+
+        <nav> <!-- MENU DE LA PAGINA -->
+            <ul>
+                <li>
+                    <a href="PRINCIPAL.html">
+                        <button id="inicio" class="BotonMenu">INICIO</button>
+                    </a>
+                    
+                </li>
+
+                <li>
+                    <a href="PRODUCTOS.html">
+                        <button id="productos" class="BotonMenu">PRODUCTOS</button>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="PROVEEDORES.html">
+                    <button id="proveedores" class="BotonMenu">PROVEEDORES</button>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="CLIENTES.html">
+                    <button id="clientes" class="BotonMenu">CLIENTES</button>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="principal.html">
+                    <button id="facturas" class="BotonMenu">FACTURAS</button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="clearfix"></div>
+
+
+        <section id="content"> <!-- AQUI CAMBIA PARA SEGUN TIPO DE PERSONA-->
+
+                
+            <H1>Ingreso de nuevo producto:</H1> <br>
+            
+            <div class="contenedor3">
+                    <!-- <link rel="stylesheet" href="/css/PRODUCTOS.css">-->
+                <DIV class="divizquierda">
+                    Código de barras: <br>
+                        <input type="text" id="codigoBarras" size="45"><br><br>
+                    Nombre del producto: <br>
+                        <input type="text" id="nombreProducto" size="45"><br><br>
+                    Marca: <br>
+                        <input type="text" id="marcaProducto" size="45"><br><br>
+                    Referencia: <br>
+                        <input type="text" id="referenciaProducto" size="45"><br><br>     
+                    Valor de ingreso: <br>
+                        <input type="number" id="valorIngreso" size="45"><br><br>
+                    Valor IVA: <br>
+                        <input type="number" id="valorIVA" size="45"><br><br>
+                </DIV>
+
+                <DIV class="divcenter">
+                    Valor venta: <br>
+                        <input type="number" id="valorVenta" size="45"><br><br>
+                    Estado de ingreso:
+                        <select id="estadoIngreso" style="width: 174px; height: 35px;">
+                            <option value="0"> -- </option>
+                            <option value="1">Excelente</option>
+                            <option value="2">Bueno</option>
+                            <option value="3">Regular</option>
+                            <option value="4">Aceptable</option>
+                            <option value="5">Malo</option>
+                            <option value="6">No permite uso</option>
+                        </select><br><br>
+                </DIV>
+
+                <DIV class="divderecha">
+                Fecha de ingreso:
+                    <input type="date" id="fechaIngreso"><br><br>
+                Cantidad ingresada: <br>
+                    <input type="number" id="cantidadIngresada" size="45"><br><br>
+                Descripción <br>
+                    <textarea id="Cuentanos" cols="20" rows="5" maxlength="20" placeholder="Descripción"></textarea>
+                </DIV>
+            </div>
+            
+            <div class="DivBotton">
+                <button class="BotonMenu" id="Aceptar" onclick="crearProducto()">Agregar producto</button>
+            </div>
+        
+        </section>
+
+        <aside> <!-- BARRA LATERAL DE LA PAGINA -->
+            <h2>Opciones de gestión</h2><br>
+        
+                <a href="agregarPRODUCTO.html"><button id="buscarButton" class="buscarButton">Agregar <br> producto</button></a><br><br>
+                <a href="agregarPROVEEDOR.html"><button id="buscar" class="buscarButton">Agregar <br> proveedor</button></a><br><br>
+                <a href="agregarCLIENTE.html"><button id="buscar" class="buscarButton">Agregar <br> cliente</button></a><br><br>
+                <button id="buscar" class="buscarButton">Crear nueva factura</button><br><br>
+        
+        </aside>
+
+        <div class="clearfix"></div>
+
+        <footer> <!-- PIE DE PAGINA -->
+            <div class="containerFooter">
+                <h1>Gracias por confiar en ESCA ® inventarios <br>¡Vuelve pronto!</h1>
+                <img src="/imagenes/tableta-fotor-20241130105450.png" alt="Libreta" id="Libreta">
+            </div>
+        </footer>
+    
+    </div>
+
+    <script src="/js/crearProducto.js"></script>
+    
+</body>
+
+</html>
